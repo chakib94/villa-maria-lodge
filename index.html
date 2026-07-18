@@ -9,6 +9,38 @@
     <link rel="stylesheet" href="css/tailwind.min.css">
     <link rel="icon" type="image/png" sizes="32x32" href="shuffle-for-tailwind.png">
 </head>
+<style>
+  html,
+  body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  body {
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+
+  body > div {
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+
+  body > div > section:first-of-type {
+    min-height: 100vh !important;
+    min-height: 100dvh !important;
+  }
+
+  @media (max-width: 768px) {
+    body > div,
+    body > div > section:first-of-type {
+      min-height: 100dvh !important;
+    }
+  }
+</style>
 <body class="antialiased font-body bg-body text-body bg-stone-50">
     <div class="">
                 
